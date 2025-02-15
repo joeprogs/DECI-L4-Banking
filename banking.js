@@ -1,6 +1,6 @@
 // Bank Management System
 // DECI Monthly Session 2: Room 2
-// Youssef Emad, Abdulaziz Ahmed, Sohaila Said, Kareem Magdy
+// Feb 2025
 
 // Used for client addresses
 class Address {
