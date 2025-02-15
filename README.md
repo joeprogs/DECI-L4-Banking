@@ -1,5 +1,5 @@
 # Banking Management System
-## DECI Monthly Session 4: Room 2
+## DECI Monthly Session 2: Room 2
 
 ### Participants
 - **Youssef Emad**
