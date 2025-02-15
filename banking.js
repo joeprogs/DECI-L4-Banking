@@ -71,5 +71,3 @@ class BankAcc {
 
 const address = new Address("New York", "Potato St.", 23, 5);
 const bankAcc = new BankAcc("Youssef", 16, 2000, address);
-
-bankAcc.withdraw(2200);
