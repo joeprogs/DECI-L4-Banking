@@ -22,8 +22,10 @@ class BankAcc {
 
     // Log account owner name and balance
     accountInfo() {
+        console.log("-------------------------------");
         console.log(`Name: ${this.name}`);
         console.log(`Balance: $${this.balance}`);
+        console.log("-------------------------------");
     }
 
     // Add amount to account balance
@@ -37,8 +39,10 @@ class BankAcc {
             setTimeout(resolve, 1000, amount);
         }).then((amount) => {
             this.addAmount(amount);
-            console.log(`$${amount} has been deposited successfully to your account.`);
-            console.log(`Your new balance is $${this.balance}.`);
+            console.log("-------------------------------");
+            console.log(`$${amount} has been deposited successfully.`);
+            console.log(`Balance: $${this.balance}.`);
+            console.log("-------------------------------");
         });
     }
 
@@ -57,17 +61,21 @@ class BankAcc {
             setTimeout(resolve, 1000);
         });
 
+        console.log("-------------------------------");
         // Check if amount can be withdrawn
         if (isBalanceValid) {
             this.balance -= amount;
-            console.log(`$${amount} has been withdrawn successfully from your account.`);
-            console.log(`Your new balance is $${this.balance}.`);
+            console.log(`$${amount} has been withdrawn successfully.`);
+            console.log(`Balance: $${this.balance}.`);
         }
         else {
             console.log("You don't have enough money.");
         }
+        console.log("-------------------------------");
     }
 }
 
 const address = new Address("New York", "Potato St.", 23, 5);
 const bankAcc = new BankAcc("Youssef", 16, 2000, address);
+
+bankAcc.withdraw(2000);
